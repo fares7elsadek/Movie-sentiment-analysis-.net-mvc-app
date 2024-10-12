@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Review form -->
+<form method="post" action="/Home/Predict">
+    <textarea class="form-control" name="review" placeholder="Type your movie review here..." required></textarea>
+    <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary">Analyze Sentiment</button>
+    </div>
+</form>
+
+<!-- Display the result -->
+@if (ViewBag.Result != null)
+{
+    <div class="result-box mt-4">
+        Sentiment: <strong>@ViewBag.Result</strong>
+    </div>
+}
+
+<!-- Error alert -->
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger mt-4">
+        @ViewBag.Error
+    </div>
+}
