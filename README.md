@@ -4,7 +4,7 @@ This is an ASP.NET MVC application that predicts the sentiment (positive or nega
 
 ## Live Preview
 
-[Movie Sentiment Analysis Live Demo](https://movie-sentiment-analysis.runasp.net/Home/Predict)
+[Movie Sentiment Analysis Live Demo](https://movie-sentiment-analysis.runasp.net/)
 
 ## Features
 
